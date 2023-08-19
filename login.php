@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if($user && $user["password"] === $_POST["password"]) {
         session_start();
-        $_SESSION["user_id"] = $user["id"];
+        $_SESSION["logged_in"] = $user["name"];
         header("Location: index.php");
         exit;
     }

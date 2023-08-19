@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+  session_start();
 
 ?>
 
@@ -17,9 +17,16 @@ session_start();
 </head>
 <body>
     <h1>Airate Home</h1>
-    <nav>
-        <a href="php/login.php">Login</a>
-    </nav>
+    <?php if (isset($_SESSION["logged_in"])): ?>
+      <nav>
+        <a href="profile.php">Profile</a>
+        <a href="report.php">Report</a>
+      </nav>
+    <?php else: ?>  
+      <nav>
+          <a href="login.php">Login</a>
+      </nav>
+    <?php endif; ?>
     <div id="map"></div>
 
     <!-- 

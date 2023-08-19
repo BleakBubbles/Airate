@@ -54,15 +54,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     <h1>Airate Signup</h1>
     <p>Already have an account? <a href="login.php">Login here.</a></p>
     <form method="post">
-        <div>
-            <input type="email" placeholder = "email" id="email" name="email">
-        </div>
-        <div>
-            <input type="text" placeholder = "username" id="name" name="name">
-        </div>
-        <div>
-            <input type="password" placeholder = "password" id="password" name="password">
-        </div>
         <select name="location" id="location">
                 <?php
                     while ($city = mysqli_fetch_array($cities,MYSQLI_ASSOC)):;
@@ -73,6 +64,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
                     </option>
                 <?php endwhile ?>
         </select>
+        <div>
+            <input type="email" placeholder = "email" id="email" name="email">
+        </div>
+        <div>
+            <input type="text" placeholder = "username" id="name" name="name">
+        </div>
+        <div>
+            <input type="password" placeholder = "password" id="password" name="password">
+        </div>
         <button>sign up</button>
     </form>
     <?php if ($invalid_signup): ?>
