@@ -16,7 +16,7 @@
   }
   .v8_316 {
     width: 390px;
-    height: 786px;
+    height: 778px;
     background: rgba(124,157,150,1);
     opacity: 1;
     position: absolute;
@@ -26,6 +26,7 @@
   .v8_261 {
     width: 390px;
     height: 59px;
+    border-radius: 20px;
     background: rgba(124,157,150,1);
     opacity: 1;
     position: absolute;
@@ -69,7 +70,7 @@
     text-align: left;
   }
   .v9_519 {
-    width: 95px;
+    width: 150px;
     color: rgba(255,255,255,1);
     position: absolute;
     top: 720px;

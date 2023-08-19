@@ -43,6 +43,48 @@ function initMap() {
         // Browser doesn't support Geolocation
         handleLocationError(false, infoWindow, map.getCenter());
     }
+
+    //array of AQHI markers
+    const markerBase = "vector/AQHI";
+    const markers = [];
+    for(let i=0; i<=11; i++){
+      markers[0] = markerBase + i + ".svg";
+    }
+
+    //array of places
+    const features = [
+      {name:"Toronto",
+      position: new google.maps.LatLng(43.653225, -79.383186),
+      },
+      {name:"Brampton",
+      position: new google.maps.LatLng(43.731548, -79.762421),
+      },
+      {name:"Hamilton",
+      position: new google.maps.LatLng(43.255722, -79.871101),
+      },
+      {name:"Markham",
+      position: new google.maps.LatLng(43.8563707,-79.3376825),
+      },
+      {name:"Vaughan",
+      position: new google.maps.LatLng(43.7941544,-79.5268023),
+      },
+      {name:"Oakville",
+      position: new google.maps.LatLng(43.447436,-79.666672),
+      },
+      {name:"Richmond Hill",
+      position: new google.maps.LatLng(43.8801166,-79.4392925),
+      },
+      {name:"Burlington",
+      position: new google.maps.LatLng(43.3248924,-79.7966835),
+      },
+      {name:"Oshawa",
+      position: new google.maps.LatLng(43.3248924,-79.7966835),
+      },
+      {name:"Mississauga",
+      position: new google.maps.LatLng(43.5896231,-79.6443879),
+      },
+    ]
+
   
 }
 
