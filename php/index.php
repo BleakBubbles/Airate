@@ -8,13 +8,12 @@ session_start();
 <html lang="en">
 <head>
     <title>Airate</title>
-    <title>Airate</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <script type="module" src="./script/index.js"></script>
 </head>
 <body>
     <h1>Airate Home</h1>
