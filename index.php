@@ -12,13 +12,13 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="./style/style.css" />
-    <script type="module" src="./script/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style/style.css"/>
+    <script type="module" src="./index.js"></script>
 </head>
 <body>
     <h1>Airate Home</h1>
     <nav>
-        <a href="login.php">Login</a>
+        <a href="php/login.php">Login</a>
     </nav>
     <div id="map"></div>
 

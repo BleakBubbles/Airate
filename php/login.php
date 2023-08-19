@@ -3,9 +3,9 @@
 $invalid_login = false;
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $mysqli = require __DIR__ . "/database.php";
+    $mysqli = require __DIR__ . "\\database.php";
 
-    $sql = sprintf("SELECT * FROM login WHERE name = '%s'", $_POST["name"]);
+    $sql = sprintf("SELECT * FROM user WHERE name = '%s'", $_POST["name"]);
 
     $result = $mysqli->query($sql);
 
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airate</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <h1>Airate Login</h1>
