@@ -2,8 +2,6 @@
 
 session_start();
 
-$_SESSION
-
 ?>
 
 <!DOCTYPE html>

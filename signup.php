@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         <div>
             <input type="password" placeholder = "password" id="password" name="password">
         </div>
-        <select name="location" id="location"
+        <select name="location" id="location">
                 <?php
                     while ($city = mysqli_fetch_array($cities,MYSQLI_ASSOC)):;
                 ?>
