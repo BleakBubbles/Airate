@@ -19,36 +19,11 @@ function initMap() {
     loadingText.textContent = "Loading Location...";
     loadingText.classList.add("loading-text");
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(loadingText);
-    
-    if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-    (position) => {
-        const pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude,
-        };
-
-        loadingText.classList.add("hide");
-        new google.maps.Marker({
-            position: pos,
-            map: map,
-          });
-        map.setCenter(pos);
-    },
-    () => {
-        handleLocationError(true, infoWindow, map.getCenter());
-    },
-    );
-    } else {
-        // Browser doesn't support Geolocation
-        handleLocationError(false, infoWindow, map.getCenter());
-    }
 
     //array of AQHI markers
-    const markerBase = "vector/AQHI";
-    const markers = [];
+    const icons = [];
     for(let i=0; i<=11; i++){
-      markers[0] = markerBase + i + ".svg";
+      icons[i] = "vector/AQHI" + i.toString() + ".svg";
     }
 
     //array of places
@@ -83,8 +58,39 @@ function initMap() {
       {name:"Mississauga",
       position: new google.maps.LatLng(43.5896231,-79.6443879),
       },
-    ]
+    ];
 
+    for(let i=0; i<features.length; i++){
+      new google.maps.Marker({
+        position: features[i].position,
+        icon: icons[i],
+        map: map,
+      });
+    }
+    
+    if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+    (position) => {
+        const pos = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude,
+        };
+
+        loadingText.classList.add("hide");
+        new google.maps.Marker({
+            position: pos,
+            map: map,
+          });
+        map.setCenter(pos);
+    },
+    () => {
+        handleLocationError(true, infoWindow, map.getCenter());
+    },
+    );
+    } else {
+        // Browser doesn't support Geolocation
+        handleLocationError(false, infoWindow, map.getCenter());
+    }
   
 }
 
