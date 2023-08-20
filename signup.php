@@ -64,15 +64,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
                     </option>
                 <?php endwhile ?>
         </select>
-        <div>
-            <input type="email" placeholder = "email" id="email" name="email">
-        </div>
-        <div>
-            <input type="text" placeholder = "username" id="name" name="name">
-        </div>
-        <div>
-            <input type="password" placeholder = "password" id="password" name="password">
-        </div>
+        <input type="text" placeholder = "username" id="name" name="name">
+        <input type="email" placeholder = "email" id="email" name="email">
+        <input type="password" placeholder = "password" id="password" name="password">
         <button>sign up</button>
     </form>
     <?php if ($invalid_signup): ?>

@@ -29,25 +29,28 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airate</title>
-
-    <link rel="stylesheet" href="./style/style.css">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./html/style/login.css"/></head>
 <body>
-    <h1>Airate Login</h1>
-    <p>Don't have an account? <a href="signup.php">Signup here.</a></p>
+<div class="v8_253">
+        <div class="v8_316"></div>
+        <div class="v8_261">
+            <a href="index.php"><div class="x-container">
+                <div class="x-button"></div>
+            </div> </a>
+        </div><span class="v8_306">Welcome Back!</span><span
+            class="v8_310">Username</span><span class="v9_519">No account?</span><span class="v8_311">Password</span>
+    <div class="v8_309"></div>
+    <span class="v8_268">Login</span>
     <form method="post">
-        <div>
-            <input type="text" placeholder = "username" id="name" name="name" value ="<?= $_POST["name"] ?? "" ?>">
-        </div>
-        <div>
-            <input type="password" placeholder = "password" id="password" name="password">
-        </div>
-
-        <button>log in</button>
+        <input class="username" type="text" id="name" name="name" value ="<?= $_POST["name"] ?? "" ?>">
+        <input class="password" type="password" id="password" name="password">
+        <button class="login">Login</button>
     </form>
+    <a href="signup.php">
+        <button class="register">Register</button>
+    </a>
+    </div>
     <script src="script.js"></script>
-    <?php if ($invalid_login): ?>
-        <p style="color:red">invalid login</p>
-    <?php endif; ?>
 </body>
 </html>

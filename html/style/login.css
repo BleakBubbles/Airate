@@ -60,19 +60,6 @@
   
   }
   
-
-  .v8_262 {
-    width: 54px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 73px;
-    left: 18px;
-    font-family: Inter;
-    font-weight: Semi Bold;
-    font-size: 20px;
-    opacity: 1;
-    text-align: left;
-  }
   .v8_306 {
     width: 149px;
     color: rgba(255,255,255,1);
@@ -80,7 +67,7 @@
     top: 341px;
     left: 120px;
     font-family: Inter;
-    font-weight: Semi Bold;
+    font-weight: bolder;
     font-size: 20px;
     opacity: 1;
     text-align: left;
@@ -101,7 +88,7 @@
     width: 150px;
     color: rgba(255,255,255,1);
     position: absolute;
-    top: 720px;
+    top: 600px;
     left: 147px;
     font-family: Inter;
     font-weight: Light;
@@ -124,7 +111,8 @@
   .name {
     color: #fff;
   }
-  .v8_307 {
+  .username {
+    border:none;
     width: 357px;
     height: 34px;
     background: rgba(244,232,222,1);
@@ -136,9 +124,10 @@
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    overflow: hidden;
+    overflow: auto;
   }
-  .v8_312 {
+  .password {
+    border:none;
     width: 357px;
     height: 34px;
     background: rgba(244,232,222,1);
@@ -150,7 +139,7 @@
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    overflow: hidden;
+    overflow: auto;
   }
   .v8_309 {
     width: 150px;
@@ -165,20 +154,12 @@
     left: 120px;
     overflow: hidden;
   }
-  .v9_522 {
-    width: 100px;
-    height: 27px;
-    background: url("../images/v9_522.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 740px;
-    left: 145px;
-    overflow: hidden;
-  }
-  .v9_520 {
+  .register {
+    border:none;
+    font-family: Inter;
+    font-weight: bolder;
+    font-size: 14px;
+    color: rgba(244,232,222,1);
     width: 100px;
     height: 27px;
     background: rgba(255,141,160,1);
@@ -191,23 +172,23 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow: hidden;
-  }
-  .v9_521 {
-    width: 68px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 5px;
-    left: 16px;
-    font-family: Inter;
-    font-weight: Semi Bold;
-    font-size: 14px;
+    background-size: cover;
     opacity: 1;
-    text-align: left;
+    position: absolute;
+    top: 630px;
+    left: 145px;
+    overflow: hidden;
   }
-  .v9_966 {
+  .login {
+    background: rgba(255,141,160,1);
+    border:none;
+    border-radius: 10px;
+    font-family: Inter;
+    font-weight: bolder;
+    font-size: 14px;
+    color: rgba(244,232,222,1);
     width: 84px;
     height: 27px;
-    background: url("../images/v9_966.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -218,6 +199,9 @@
     overflow: hidden;
   }
   .v8_314 {
+    font-family: Inter;
+    font-weight: bolder;
+    font-size: 14px;
     width: 84px;
     height: 27px;
     background: rgba(255,141,160,1);
@@ -237,9 +221,18 @@
     position: absolute;
     top: 5px;
     left: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v8_268 {
+    width: 81px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 73px;
+    left: 18px;
     font-family: Inter;
     font-weight: Semi Bold;
-    font-size: 14px;
+    font-size: 20px;
     opacity: 1;
     text-align: left;
   }
