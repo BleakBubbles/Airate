@@ -66,6 +66,7 @@ body {
 }
 
 .profile{
+  padding:0;
   background-color:#7C9D96;
   border-radius: 50%; 
   position: fixed;
@@ -74,11 +75,29 @@ body {
   z-index: 10;
 }
 
+.profile img{
+  display:block;
+}
+
 .login{
+  width:75px;
+  height:75px;
+  text-align:center;
+  vertical-align: bottom;
   background-color:#7C9D96;
   border-radius: 50%;
   position:fixed;
   bottom:15px;
   left:15px;
   z-index: 10;
+}
+
+.login img{
+  position:absolute;
+  top:10px;
+  left:12.5px;
+}
+
+a:hover {
+  filter:brightness(80%);
 }

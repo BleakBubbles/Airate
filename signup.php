@@ -34,6 +34,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         
         $stmt->execute();
         
+        session_start();
+        $_SESSION["logged_in"] = $user["name"];
+        $_SESSION["location"] = $user["location"];
         header("Location: index.php");
         exit;
     }

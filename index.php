@@ -23,11 +23,11 @@
             <img src="html/images/newAirateLogo.png" width="75px">
           </a>
           <a class="profile" href="profile.php">
-            <img src="html/images/image 4.png" width="75px">
+            <img src="html/images/image 6.png" width="75px">
           </a>
       <?php else: ?> 
             <a class="login" href="login.php">
-              <img src="html/images/image 6.png" width="75px">
+              <img src="html/images/image 4.png" width="50px">
             </a>
       <?php endif; ?>
       </div>
