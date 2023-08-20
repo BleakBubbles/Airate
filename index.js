@@ -76,7 +76,7 @@ async function initMap() {
         content: infoText[numConv[x[i]]],
       });
       marker[i].addListener("click", () => {
-        infowindow2.open({
+        infowindow2[i].open({
           anchor: marker,
           map,
         });
