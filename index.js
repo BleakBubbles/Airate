@@ -59,11 +59,12 @@ async function initMap() {
     ];
 
     const infoText = ["Low Risk \n Ideal air quality for outdoor activities.", "Moderate Risk \n No need to modify your usual outdoor activities unless you experience symptoms", "High Risk \n Consider reducing or rescheduling strenuous activities outdoors if you experience symptoms", "Very High Risk \n Reduce or reschedule strenuous activities outdoors"]
-    const numConv = [1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 4];
+    const numConv = [0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 3];
 
     const x = await getAQHINum();
     console.log(x);
     const marker = [];
+    const infowindow2 = [];
 
     for(let i=0; i<features.length; i++){
       marker[i] = new google.maps.Marker({
@@ -71,9 +72,8 @@ async function initMap() {
         icon: icons[x[i]],
         map: map,
       });
-      const infowindow2 = new google.maps.InfoWindow({
+      infowindow2[i] = new google.maps.InfoWindow({
         content: infoText[numConv[x[i]]],
-        ariaLabel: "Uluru",
       });
       marker[i].addListener("click", () => {
         infowindow2.open({
