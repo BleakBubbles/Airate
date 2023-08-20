@@ -60,10 +60,12 @@ function initMap() {
       },
     ];
 
+    const AQHI = [];
+
     for(let i=0; i<features.length; i++){
       new google.maps.Marker({
         position: features[i].position,
-        icon: icons[i],
+        icon: icons[AQHI[i]],
         map: map,
       });
     }
@@ -102,6 +104,22 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       : "Error: Your browser doesn't support geolocation.",
   );
   infoWindow.open(map);
+}
+
+async function getAQHINum(){
+  const response= await fetch("getAQHI.php", {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ request_type:'user_auth', credential: response.credential }),
+  })
+  console.log(response);
+  const data= await response.json();
+  console.log(data);
+  length=data.location.length;
+  console.log(data);
+  for(i=0;i<length;i++){
+    AQHI[i]=data.location[i].total/data.location[i].count;
+  }
 }
 
 
