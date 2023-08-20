@@ -1,4 +1,4 @@
-/* * {
+* {
     box-sizing: border-box;
   }
   body {
@@ -76,12 +76,12 @@
     right: 10px;
   }
   
-  /* .name {
+  .name {
     color: #ffffff;
   }
   .name {
     color: #ffffff;
-  } */
+  }
   
   .hover{
     position:fixed;
@@ -117,4 +117,4 @@
     100%{
       filter:opacity(100%);
     }
-  } */
+  }
