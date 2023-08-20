@@ -4,7 +4,7 @@
 // locate you.
 let map, infoWindow;
 
-function initMap() {
+async function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
      center: { lat: 56.1304, lng: -106.3468 },
      zoom: 9,
@@ -60,7 +60,8 @@ function initMap() {
       },
     ];
 
-    var x = getAQHINum();
+    const x = await getAQHINum();
+    console.log(x);
 
     for(let i=0; i<features.length; i++){
       new google.maps.Marker({
@@ -114,14 +115,11 @@ async function getAQHINum(){
   console.log(response);
   const data= await response.json();
   console.log(data);
-  length=data.location.length;
-  console.log(length);
-  var AQHI = new Array();
-  for(i=0;i<length;i++){
-    if(data.location[i].count!=0)AQHI[i]=data.location[i].total/data.location[i].count; //round
+  const AQHI = [];
+  for(let i=0;i<10;i++){
+    if(data[i][1]!=0)AQHI[i]=Math.round(data[i][0]/data[i][1]); //round
     else AQHI[i]=0;
   }
-  console.log(AQHI);
   return AQHI;
 }
 
