@@ -201,125 +201,99 @@
     text-align: left;
   }
   
-  .v9_969 {
+  button {
     width: 40px;
     height: 40px;
-    background: rgba(255, 195, 143, 1);
     opacity: 1;
     position: absolute;
+    border-radius: 50%;
+  }
+
+  .button-one {
+    background: rgba(255, 195, 143, 1);
+  }
+  
+  .button-one:hover {
+    background: rgba(248, 163, 89, 1);
+  }
+
+  .button-two {
+    background: rgba(248, 163, 89, 1);
+  }
+
+  .button-two:hover {
+    background: rgba(255, 134, 30, 1);
+  }
+
+  .button-three {
+    background: rgba(255, 134, 30, 1);
+  }
+
+  .button-three:hover {
+    background: rgba(255, 118, 0, 1);
+  }
+
+  .button-four {
+    background: rgba(255, 118, 0, 1);
+  }
+  
+  .button-four:hover {
+    background: rgb(215, 100, 0);
+  }
+
+  .button1 {
     top: 274px;
     left: 35px;
-    border-radius: 50%;
   }
-  
-  .v9_974 {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 195, 143, 1);
-    opacity: 1;
-    position: absolute;
+
+  .button2 {
     top: 274px;
     left: 90px;
-    border-radius: 50%;
   }
   
-  .v9_975 {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 195, 143, 1);
-    opacity: 1;
-    position: absolute;
+  .button3 {
     top: 274px;
     left: 145px;
-    border-radius: 50%;
   }
   
-  .v9_976 {
-    width: 40px;
-    height: 40px;
-    background: rgba(248, 163, 89, 1);
-    opacity: 1;
-    position: absolute;
+  .button4 {
     top: 274px;
     left: 200px;
-    border-radius: 50%;
   }
   
-  .v9_977 {
-    width: 40px;
-    height: 40px;
-    background: rgba(248, 163, 89, 1);
-    opacity: 1;
-    position: absolute;
+  .button5 {
     top: 274px;
     left: 255px;
-    border-radius: 50%;
   }
   
-  .v9_978 {
-    width: 40px;
-    height: 40px;
-    background: rgba(248, 163, 89, 1);
-    opacity: 1;
-    position: absolute;
+  .button6 {
     top: 274px;
     left: 310px;
-    border-radius: 50%;
   }
   
-  .v9_979 {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 134, 30, 1);
-    opacity: 1;
-    position: absolute;
+  .button7 {
     top: 327px;
     left: 35px;
-    border-radius: 50%;
   }
   
-  .v9_980 {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 134, 30, 1);
-    opacity: 1;
-    position: absolute;
+  .button8 {
     top: 327px;
     left: 90px;
-    border-radius: 50%;
   }
   
-  .v9_981 {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 134, 30, 1);
-    opacity: 1;
-    position: absolute;
+  .button9 {
     top: 327px;
     left: 145px;
-    border-radius: 50%;
   }
   
-  .v9_982 {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 134, 30, 1);
-    opacity: 1;
-    position: absolute;
+  .button10 {
     top: 327px;
     left: 200px;
-    border-radius: 50%;
   }
   
-  .v9_983 {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 118, 0, 1);
-    opacity: 1;
-    position: absolute;
+  .button11 {
     top: 327px;
     left: 255px;
-    border-radius: 50%;
   }
   
   .v9_984 {
