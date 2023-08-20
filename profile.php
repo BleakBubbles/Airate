@@ -15,15 +15,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airate</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./html/style/profile.css"/></head>
 </head>
 <body>
-    <h1>Airate Profile</h1>
-    
+<div class="v8_273">
+    <div class="v8_276">
+    <div class="v14_82"></div>
+    <div class="v8_277">
+            <a href="index.php"><div class="x-container">
+                <div class="x-button"></div>
+            </div> </a>
+    </div>
+    <span class="v8_278">Profile</span>
+    <div class="v14_86"></div>
     <?php if (isset($_SESSION["logged_in"])): ?>
-        <p><?php echo $_SESSION["logged_in"];?></p>
-        <p><?php echo $points["points"];?></p>
+        <span class="v14_83" text-align='center'><?php echo $_SESSION["logged_in"];?></span>
+        <span class="v14_85 width=200px">AQHI Points:<?php echo $points["points"];?></span>
     <?php else: ?>
         <p>Unable to load profile</p>
     <?php endif; ?>
+    <div class="v14_129"></div>
+        <div class="v14_200"></div>
+        <div class="v14_203"></div>
+        <div class="v14_204"></div>
+        <div class="v14_205"></div>
+        <div class="v14_206"></div>
+        <div class="v14_207"></div>
+        <div class="v14_208"></div>
+        <div class="v14_209"></div>
+        <div class="v14_210"></div>
+        <div class="v14_211"></div>
+        <div class="v14_88"></div>
+        <div class="v14_125"></div>
+        <div class="v14_130"></div>
+        <div class="v14_90"></div>
+        <div class="v14_91"></div>
+        <div class="v14_92"></div>
+        <div class="v14_93"></div>
+        <div class="v14_94"></div>
+        <div class="v14_95"></div>
+        <div class="v14_96"></div>
+        <div class="v14_97"></div>
+        <div class="v14_98"></div>
+        <div class="v14_99"></div>
+        <div class="v14_100"></div>
+        <div class="v14_101"></div>
+        <div class="v14_102"></div>
+        <div class="v14_103"></div>
+        <div class="v14_104"></div>
+        <div class="v14_105"></div>
+        <div class="v14_106"></div>
+        <div class="v14_107"></div>
+        <div class="v14_108"></div>
+        <div class="v14_109"></div>
+        <div class="v14_110"></div>
+        <div class="v14_118"></div>
+        <div class="v14_119"></div>
+        <div class="v14_120"></div>
+        <div class="v14_121"></div>
+        <div class="v14_122"></div>
+        <div class="v14_123"></div>
+        <div class="v14_124"></div>
+        <div class="v14_111"></div>
+        <div class="v14_112"></div>
+        <div class="v14_113"></div>
+        <div class="v14_114"></div>
+        <div class="v14_115"></div>
+        <div class="v14_116"></div>
+        <div class="v14_117"></div><span class="v14_212">1</span><span
+            class="v14_213">2</span><span class="v14_214">3</span><span class="v14_215">4</span><span
+            class="v14_216">5</span><span class="v14_217">6</span><span class="v14_218">7</span><span
+            class="v14_219">8</span><span class="v14_220">9</span><span class="v14_221">10</span><span
+            class="v14_128">AUGUST LEADERBOARD</span><span class="v14_127">AUGUST AQHI</span>
+        <div class="v14_136"><span class="v14_133">4</span><span class="v14_135">7/30</span></div>
+        <div class="v14_137"><span class="v14_138">4</span><span class="v14_139">7/31</span></div>
+        <div class="v14_140"><span class="v14_141">6</span><span class="v14_142">8/01</span></div>
+        <div class="v14_146"><span class="v14_147">2</span><span class="v14_148">8/03</span></div>
+        <div class="v14_149"><span class="v14_150">1</span><span class="v14_151">8/04</span></div>
+        <div class="v14_152"><span class="v14_153">1</span><span class="v14_154">8/05</span></div>
+        <div class="v14_143"><span class="v14_144">3</span><span class="v14_145">8/02</span></div>
+        <div class="v14_155"><span class="v14_156">2</span><span class="v14_157">8/06</span></div>
+        <div class="v14_158"><span class="v14_159">5</span><span class="v14_160">8/07</span></div>
+        <div class="v14_161"><span class="v14_162">7</span><span class="v14_163">8/08</span></div>
+        <div class="v14_164"><span class="v14_165">2</span><span class="v14_166">8/10</span></div>
+        <div class="v14_167"><span class="v14_168">2</span><span class="v14_169">8/11</span></div>
+        <div class="v14_170"><span class="v14_171">1</span><span class="v14_172">8/12</span></div>
+        <div class="v14_173"><span class="v14_174">3</span><span class="v14_175">8/09</span></div>
+        <div class="v14_176"><span class="v14_177">3</span><span class="v14_178">7/13</span></div>
+        <div class="v14_197"><span class="v14_198">2</span><span class="v14_199">8/20</span></div>
+        <div class="v14_179"><span class="v14_180">2</span><span class="v14_181">7/14</span></div>
+        <div class="v14_182"><span class="v14_183">3</span><span class="v14_184">8/15</span></div>
+        <div class="v14_185"><span class="v14_186">5</span><span class="v14_187">8/17</span></div>
+        <div class="v14_188"><span class="v14_189">4</span><span class="v14_190">8/18</span></div>
+        <div class="v14_191"><span class="v14_192">3</span><span class="v14_193">8/19</span></div>
+        <div class="v14_194"><span class="v14_195">5</span><span class="v14_196">8/16</span></div>
+        <div class="v14_222"></div>
+        <div class="v14_225"></div>
+        <div class="v14_226"></div>
+        <div class="v14_227"></div>
+        <div class="v14_228"></div>
+        <div class="v14_229"></div>
+        <div class="v14_230"></div>
+        <div class="v14_231"></div>
+        <div class="v14_232"></div>
+        <div class="v14_233"></div>
+    </div>
 </body>
 </html>

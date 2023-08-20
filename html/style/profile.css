@@ -25,6 +25,7 @@ body {
   border-radius: 20px 20px 0 0;
 }
 .v14_83 {
+  text-align: center;
   width: 99px;
   color: rgba(255,255,255,1);
   position: absolute;
@@ -34,7 +35,6 @@ body {
   font-weight: Semi Bold;
   font-size: 20px;
   opacity: 1;
-  text-align: left;
 }
 .v14_82 {
   width: 125px;
@@ -656,16 +656,15 @@ body {
   border-radius: 50%;
 }
 .v14_85 {
-  width: 85px;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 318px;
   left: 24px;
   font-family: Inter;
-  font-weight: Semi Bold;
   font-size: 14px;
   opacity: 1;
   text-align: left;
+  width: 200px !important;
 }
 .v14_212 {
   width: 7px;

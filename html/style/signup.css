@@ -191,7 +191,12 @@ select{
 
 
 
-.v9_324 {
+.email {
+  color: #626262;
+  font-family: Inter;
+  font-weight: Light;
+  font-size: 16px;
+  border:none;
   width: 357px;
   height: 34px;
   background: rgba(244,232,222,1);
@@ -205,7 +210,12 @@ select{
   border-bottom-right-radius: 10px;
   overflow: hidden;
 }
-.v9_328 {
+.password {
+  color: #626262;
+  font-family: Inter;
+  font-weight: Light;
+  font-size: 16px;
+  border:none;
   width: 357px;
   height: 34px;
   background: rgba(244,232,222,1);
@@ -231,7 +241,12 @@ select{
   opacity: 1;
   text-align: left;
 }
-.v9_319 {
+.username {
+  color: #626262;
+  font-family: Inter;
+  font-weight: Light;
+  font-size: 16px;
+  border:none;
   width: 357px;
   height: 34px;
   background: rgba(244,232,222,1);
@@ -261,14 +276,21 @@ select{
   left: 148px;
   overflow: hidden;
 }
-.v9_528 {
+.register {
+  border:none;
+  top: 613px;
+  left: 148px;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  font-family: Inter;
+  font-weight: bolder;
+  font-size: 14px;
+  opacity: 1;
   width: 100px;
   height: 27px;
   background: rgba(255,141,160,1);
   opacity: 1;
   position: absolute;
-  top: 0px;
-  left: 0px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -282,7 +304,7 @@ select{
   top: 5px;
   left: 16px;
   font-family: Inter;
-  font-weight: Semi Bold;
+  font-weight: bolder;
   font-size: 14px;
   opacity: 1;
   text-align: left;

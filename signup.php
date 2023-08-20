@@ -47,13 +47,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airate</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./html/style/signup.css"/></head>
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <h1>Airate Signup</h1>
-    <p>Already have an account? <a href="login.php">Login here.</a></p>
+<div class="v8_263">
+        <div class="v9_500"></div><span class="v9_332">Location</span><span class="v8_318">Airate Account Registration</span>
+        <div class="v8_317"></div>
+        <div class="v8_267">
+            <a href="index.php"><div class="x-container">
+                <div class="x-button"></div>
+            </div> </a>
+        </div><span class="v8_268">Register</span><span class="v9_320">Username</span>
+        <div class="name"></div><span class="v9_323">Email</span><span class="v9_325">Password</span>
     <form method="post">
+    <div class="dropdown-container">
+            <div class="dropdown" style="width:357px">
         <select name="location" id="location">
                 <?php
                     while ($city = mysqli_fetch_array($cities,MYSQLI_ASSOC)):;
@@ -64,13 +74,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
                     </option>
                 <?php endwhile ?>
         </select>
-        <input type="text" placeholder = "username" id="name" name="name">
-        <input type="email" placeholder = "email" id="email" name="email">
-        <input type="password" placeholder = "password" id="password" name="password">
-        <button>sign up</button>
+        </div>
+       </div>
+        <input class="username" type="text" id="name" name="name">
+        <input class="email" type="email" id="email" name="email">
+        <input class="password" type="password" id="password" name="password">
+        <button class="register">Register</button>
     </form>
-    <?php if ($invalid_signup): ?>
-        <p style="color:red">invalid signup</p>
-    <?php endif; ?>
+</div>
 </body>
 </html>
