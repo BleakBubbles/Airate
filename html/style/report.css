@@ -44,6 +44,31 @@
     left: 16px;
   }
 
+  .x-container {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    
+  }
+  .x-button {
+    width: 2px;
+    height: 25px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    border-radius: 2px 2px 2px 2px;
+  }
+  .x-button:after{
+    content:"";
+    width: 2px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 2px 2px 2px 2px;
+    position: absolute;
+    transform: rotate(-90deg);
+  }
+
   .v5_19 {
     width: 357px;
     height: 20px;

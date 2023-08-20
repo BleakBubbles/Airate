@@ -34,7 +34,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
     <div class="v5_14">
         <div class="v5_17"></div>
-        <div class="v5_18"></div><div class="v5_19"></div><span class="v5_20">Air Quality Report</span><span class="v5_21">August 20, 2023</span>
+        <div class="v5_18"><a href="index.php"><div class="x-container">
+                <div class="x-button"></div>
+            </div> </a></div><div class="v5_19"></div><span class="v5_20">Air Quality Report</span><span class="v5_21">August 20, 2023</span>
         <form action='' method='post'>
         <span class="v9_968">Air Quality Health Index (AQHI):</span><span class="v9_995">Notes:</span>
         <button class='button-one button1' name='submit' value='1'>1</button>
