@@ -20,7 +20,7 @@ body {
   background: rgba(124,157,150,1);
   opacity: 1;
   position: absolute;
-  top: 57px;
+  top: 100px; 
   left: 0px;
 }
 .v9_332 {
@@ -68,6 +68,7 @@ body {
   position: absolute;
   top: 55px;
   left: 0px;
+  border-radius: 20px 20px 0 0;
 }
 .v8_268 {
   width: 81px;
@@ -122,7 +123,8 @@ body {
   border-bottom-right-radius: 10px;
   overflow: hidden;
 } */
-.dropdown{
+
+.dropdown-container{
   width: 357px;
   height: 34px;
   background: rgba(244,232,222,1);
@@ -135,25 +137,28 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   overflow: hidden;
-  position: relative;
-  font-family: Inter;
-  font-weight: Light;
-  font-size: 16px;
-  opacity: 1;
-  text-align: left;
+} 
+
+select{
+  background-color: rgba(244,232,222,1);
+   /* Reset */
+   appearance: none;
+   border: 0;
+   outline: 0;
+   /* design */
+   font-family: Inter;
+   color: #626262;
+   width: 357px;
+  height: 34px;
+  padding: 5px;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.dropdown{
+  position: relative;
+  /* width: 357px;
+  height: 34px; */
+  overflow: hidden;
+}
 
 
 
