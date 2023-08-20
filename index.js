@@ -1,7 +1,4 @@
-// Note: This example requires that you consent to location sharing when
-// prompted by your browser. If you see the error "The Geolocation service
-// failed.", it means you probably did not give permission for the browser to
-// locate you.
+
 let map, infoWindow;
 
 async function initMap() {
@@ -15,7 +12,13 @@ async function initMap() {
       },
     });
 
+    // looading pop-up
     const loadingText = document.createElement("text");
+    loadingText.textContent = "Loading Location...";
+    loadingText.classList.add("loading-text");
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(loadingText);
+
+    const loginButton = document.createElement("button");
     loadingText.textContent = "Loading Location...";
     loadingText.classList.add("loading-text");
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(loadingText);
@@ -71,6 +74,7 @@ async function initMap() {
       });
     }
     
+    //getting the user's current location
     if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
     (position) => {

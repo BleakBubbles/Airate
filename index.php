@@ -17,16 +17,17 @@
       <script type="module" src="./index.js"></script>
   </head>
   <body>
-      <h1>Airate Home</h1>
       <?php if (isset($_SESSION["logged_in"])): ?>
-        <nav>
-          <a href="profile.php">Profile</a>
-          <a href="report.php">Report</a>
-        </nav>
-      <?php else: ?>  
-        <nav>
-            <a href="login.php">Login</a>
-        </nav>
+          <a class="report" href="report.php">
+            <img src="html/images/newAirateLogo.png" width="50px" border-radius=50% background-color=#7C9D96>
+          </a>
+          <a class="profile" href="profile.php">
+            <img src="html/images/image 4.png" width="50px" border-radius=50% background-color=#7C9D96>
+          </a>
+      <?php else: ?> 
+            <a class="login" href="login.php">
+              <img src="html/images/image 6.png" width="50px" border-radius=50% background-color=#7C9D96>
+            </a>
       <?php endif; ?>
       <div id="map"></div>
 
