@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if($user && $user["password"] === $_POST["password"]) {
         session_start();
         $_SESSION["logged_in"] = $user["name"];
+        $_SESSION["location"] = $user["location"];
         header("Location: index.php");
         exit;
     }
