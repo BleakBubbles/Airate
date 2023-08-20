@@ -17,18 +17,20 @@
       <script type="module" src="./index.js"></script>
   </head>
   <body>
+      <div class="v8_263">
       <?php if (isset($_SESSION["logged_in"])): ?>
           <a class="report" href="report.php">
-            <img src="html/images/newAirateLogo.png" width="50px" border-radius=50% background-color=#7C9D96>
+            <img src="html/images/newAirateLogo.png" width="75px">
           </a>
           <a class="profile" href="profile.php">
-            <img src="html/images/image 4.png" width="50px" border-radius=50% background-color=#7C9D96>
+            <img src="html/images/image 4.png" width="75px">
           </a>
       <?php else: ?> 
             <a class="login" href="login.php">
-              <img src="html/images/image 6.png" width="50px" border-radius=50% background-color=#7C9D96>
+              <img src="html/images/image 6.png" width="75px">
             </a>
       <?php endif; ?>
+      </div>
       <div id="map"></div>
 
       <!-- 
