@@ -60,12 +60,12 @@ function initMap() {
       },
     ];
 
-    const AQHI = [];
+    var x = getAQHINum();
 
     for(let i=0; i<features.length; i++){
       new google.maps.Marker({
         position: features[i].position,
-        icon: icons[AQHI[i]],
+        icon: icons[x[i]],
         map: map,
       });
     }
@@ -117,9 +117,12 @@ async function getAQHINum(){
   console.log(data);
   length=data.location.length;
   console.log(data);
+  var AQHI = new Array(length);
   for(i=0;i<length;i++){
-    AQHI[i]=data.location[i].total/data.location[i].count;
+    if(data.location[i].count!=0)AQHI[i]=data.location[i].total/data.location[i].count;
+    else AQHI[i]=0;
   }
+  return AQHI;
 }
 
 
