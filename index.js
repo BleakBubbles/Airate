@@ -12,13 +12,8 @@ async function initMap() {
       },
     });
 
-    // looading pop-up
+    // loading pop-up
     const loadingText = document.createElement("text");
-    loadingText.textContent = "Loading Location...";
-    loadingText.classList.add("loading-text");
-    map.controls[google.maps.ControlPosition.TOP_CENTER].push(loadingText);
-
-    const loginButton = document.createElement("button");
     loadingText.textContent = "Loading Location...";
     loadingText.classList.add("loading-text");
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(loadingText);
