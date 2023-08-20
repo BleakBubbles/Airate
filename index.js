@@ -110,7 +110,6 @@ async function getAQHINum(){
   const response= await fetch("getAQHI.php", {
     method: "GET",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ request_type:'user_auth', credential: response.credential }),
   })
   console.log(response);
   const data= await response.json();
