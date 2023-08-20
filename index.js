@@ -7,7 +7,7 @@ let map, infoWindow;
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
      center: { lat: 56.1304, lng: -106.3468 },
-     zoom: 11,
+     zoom: 9,
      streetViewControl: false,
      mapTypeControlOptions: {
         style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -115,12 +115,13 @@ async function getAQHINum(){
   const data= await response.json();
   console.log(data);
   length=data.location.length;
-  console.log(data);
-  var AQHI = new Array(length);
+  console.log(length);
+  var AQHI = new Array();
   for(i=0;i<length;i++){
-    if(data.location[i].count!=0)AQHI[i]=data.location[i].total/data.location[i].count;
+    if(data.location[i].count!=0)AQHI[i]=data.location[i].total/data.location[i].count; //round
     else AQHI[i]=0;
   }
+  console.log(AQHI);
   return AQHI;
 }
 

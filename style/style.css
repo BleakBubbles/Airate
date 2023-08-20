@@ -41,3 +41,8 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+.screen{
+  width: 390px;
+  height: 844px;
+}
